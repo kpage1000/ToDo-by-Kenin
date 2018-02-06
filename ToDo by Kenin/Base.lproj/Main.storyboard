@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="Osh-IQ-cHa" id="x6M-mz-e8N"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDo by Kenin" id="hqv-yS-t3a"/>
+                    <navigationItem key="navigationItem" title="ToDo by Kenin" id="hqv-yS-t3a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dbU-DF-ifA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addNewItemPressed:" destination="Osh-IQ-cHa" id="omF-CL-Hcv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fI6-yU-Px7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
