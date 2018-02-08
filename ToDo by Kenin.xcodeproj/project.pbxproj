@@ -14,6 +14,7 @@
 		11011A71202A403900C4F43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11011A6F202A403900C4F43D /* LaunchScreen.storyboard */; };
 		111732F4202C8B19005BF63F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 111732F2202C8B19005BF63F /* DataModel.xcdatamodeld */; };
 		11176BE7202CB5E600109135 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11176BE6202CB5E600109135 /* CategoryViewController.swift */; };
+		12916FC1E49245BE9E14407A /* Pods_ToDo_by_Kenin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EE71C72330AE5F42BB940C /* Pods_ToDo_by_Kenin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		11011A72202A403900C4F43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111732F3202C8B19005BF63F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		11176BE6202CB5E600109135 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		7AC1AEF3056588B0414C4E67 /* Pods-ToDo by Kenin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo by Kenin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDo by Kenin/Pods-ToDo by Kenin.debug.xcconfig"; sourceTree = "<group>"; };
+		A4EE71C72330AE5F42BB940C /* Pods_ToDo_by_Kenin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_by_Kenin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C59C3AD73A225646EBE4D7 /* Pods-ToDo by Kenin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo by Kenin.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDo by Kenin/Pods-ToDo by Kenin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12916FC1E49245BE9E14407A /* Pods_ToDo_by_Kenin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				11011A65202A403900C4F43D /* ToDo by Kenin */,
 				11011A64202A403900C4F43D /* Products */,
+				6EEEC769DF3FA52C51504360 /* Pods */,
+				7A10E05C73806B85EBC7B5C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
+		6EEEC769DF3FA52C51504360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AC1AEF3056588B0414C4E67 /* Pods-ToDo by Kenin.debug.xcconfig */,
+				B6C59C3AD73A225646EBE4D7 /* Pods-ToDo by Kenin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A10E05C73806B85EBC7B5C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE71C72330AE5F42BB940C /* Pods_ToDo_by_Kenin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11011A75202A403900C4F43D /* Build configuration list for PBXNativeTarget "ToDo by Kenin" */;
 			buildPhases = (
+				5DCD63726335B812A11703AC /* [CP] Check Pods Manifest.lock */,
 				11011A5F202A403900C4F43D /* Sources */,
 				11011A60202A403900C4F43D /* Frameworks */,
 				11011A61202A403900C4F43D /* Resources */,
+				74D898D9C85143E8D05F62BB /* [CP] Embed Pods Frameworks */,
+				41C3DAE32F7A3F2D8F30EBF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C3DAE32F7A3F2D8F30EBF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDo by Kenin/Pods-ToDo by Kenin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DCD63726335B812A11703AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDo by Kenin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D898D9C85143E8D05F62BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToDo by Kenin/Pods-ToDo by Kenin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDo by Kenin/Pods-ToDo by Kenin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11011A5F202A403900C4F43D /* Sources */ = {
@@ -312,6 +395,7 @@
 		};
 		11011A76202A403900C4F43D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC1AEF3056588B0414C4E67 /* Pods-ToDo by Kenin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +411,7 @@
 		};
 		11011A77202A403900C4F43D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C59C3AD73A225646EBE4D7 /* Pods-ToDo by Kenin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
